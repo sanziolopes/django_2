@@ -1,0 +1,62 @@
+/* Estilizando o formulário */
+form {
+    left: 0%;
+    width: 300px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+body {
+    background-color: rgb(93, 0, 0);
+    color: #ccc;
+}
+
+h1 {
+    color: red;
+}
+
+/* Forms em linha */
+.form-container {
+    display: inline-block;
+    width: 40%; /* Define a largura desejada para cada formulário */
+    margin-right: 50px; /* Espaço entre os formulários */
+    vertical-align: top; /* Alinha os formulários ao topo */
+    background-color: #97c0e9;
+    border:#0056b3;
+    border-radius: 25%;
+}
+
+/* Estilizando os rótulos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilizando os campos de entrada de texto e textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilizando o botão de envio */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilizando o botão de envio quando hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

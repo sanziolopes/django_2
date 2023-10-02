@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static\css\stylesheet.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Você está na Homepage</h1>
+    <h2>Bem vindo, {{username}}</h2>
+    <form action="/logout_from_home" method="post">
+        {% csrf_token %}
+        <button name="logout" value="logout">Logout</button>
+    </form>
+    <h3>
+        último acesso: {{last_access}}
+    </h3>
+    <form action="/register" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">submit</button>
+    </form>
+    
+    
+</body>
+</html>
